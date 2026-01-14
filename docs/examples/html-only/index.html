@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HTML-only Demo - Save page as PDF</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    .page-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    .form-row {
+      margin-bottom: 12px;
+    }
+
+    .form-row label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .form-row input[type="text"],
+    .form-row textarea,
+    .form-row select {
+      width: 100%;
+      padding: 6px;
+      box-sizing: border-box;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      text-align: right;
+    }
+
+    .buttons button {
+      padding: 8px 16px;
+      margin-left: 8px;
+      cursor: pointer;
+    }
+
+    .note {
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-container" id="print-area">
+    <h1>Demo: Save page to PDF (HTML-only)</h1>
+    <p>Fill in the fields below and click "Download PDF". The generated PDF will try to mimic this layout.</p>
+
+    <h2>User details</h2>
+
+    <div class="form-row">
+      <label for="firstName">First name</label>
+      <input type="text" id="firstName" name="firstName" value="John" />
+    </div>
+
+    <div class="form-row">
+      <label for="lastName">Last name</label>
+      <input type="text" id="lastName" name="lastName" value="Doe" />
+    </div>
+
+    <div class="form-row">
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments" rows="5">Sample text that will appear in the PDF.</textarea>
+    </div>
+
+    <div class="form-row">
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="it">Italy</option>
+        <option value="fr">France</option>
+        <option value="de">Germany</option>
+        <option value="us" selected>United States</option>
+      </select>
+    </div>
+
+    <div class="form-row">
+      <label>Preferences</label>
+      <label><input type="checkbox" name="newsletter" checked /> Subscribe to newsletter</label>
+      <label><input type="checkbox" name="offers" /> Receive special offers</label>
+    </div>
+
+    <div class="form-row">
+      <label>Gender</label>
+      <label><input type="radio" name="gender" value="M" checked /> Male</label>
+      <label><input type="radio" name="gender" value="F" /> Female</label>
+      <label><input type="radio" name="gender" value="O" /> Other</label>
+    </div>
+
+    <p class="note">
+      Note: this is a simple HTML demo. In a real app you can have more complex layouts; 
+      just wrap everything you want to include in the PDF inside <code>#print-area</code>.
+    </p>
+  </div>
+
+  <div class="buttons">
+    <button id="btn-download-pdf">Download PDF</button>
+  </div>
+
+  <script src="../../vendor/html2canvas.min.js"></script>
+  <script src="../../vendor/jspdf.umd.min.js"></script>
+  <script src="../../lib/pdf-export.js"></script>
+
+  <script>
+    document.getElementById('btn-download-pdf').addEventListener('click', function () {
+      const element = document.getElementById('print-area');
+
+      window.PdfExport.exportPdf({
+        element: element,
+        filename: 'demo-html-only.pdf',
+        orientation: 'p', // 'p' = portrait, 'l' = landscape
+        format: 'a4',
+        marginMm: 10
+      }).catch(function (err) {
+        console.error('PDF generation error:', err);
+        alert('An error occurred while generating the PDF. See console for details.');
+      });
+    });
+  </script>
+</body>
+</html>
