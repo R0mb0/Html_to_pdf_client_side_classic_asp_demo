@@ -1,4 +1,4 @@
-# HTML/JS to PDF Exporter for Classic ASP (and more)
+# HTML/JS to PDF Exporter for Classic ASP
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/aa436c5609614f9bbd9050679c3fbb73)](https://app.codacy.com/gh/R0mb0/Html_to_pdf_client_side_classic_asp_demo/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![pages-build-deployment](https://github.com/R0mb0/Html_to_pdf_client_side_classic_asp_demo/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/R0mb0/Html_to_pdf_client_side_classic_asp_demo/actions/workflows/pages/pages-build-deployment)
