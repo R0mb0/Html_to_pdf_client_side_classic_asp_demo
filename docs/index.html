@@ -1,8 +1,18 @@
-<html>
-    <head>
-        <title>Benvenuto</title>
-    </head>
-    <body>
-        <div align="center">Hello World!</div>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirect</title>
+  <meta http-equiv="refresh" content="0; url=./examples/html-only/index.en.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>
+    // Fallback JS redirect (more reliable on some browsers / GitHub Pages setups)
+    (function() {
+      var target = './examples/html-only/index.html';
+      window.location.replace(target);
+    })();
+  </script>
+</head>
+<body>
+</body>
 </html>
