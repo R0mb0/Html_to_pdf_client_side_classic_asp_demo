@@ -280,7 +280,7 @@ Third-party libraries:
 
 ## 🙏 Credits & inspiration
 
-- [html2canvas](https://github.com/niklasvh/html2canvas) ��� for DOM-to-canvas rendering.
+- [html2canvas](https://github.com/niklasvh/html2canvas) – for DOM-to-canvas rendering.
 - [jsPDF](https://github.com/parallax/jsPDF) – for client-side PDF generation.
 - Inspired by the need to keep **legacy Classic ASP** apps alive while:
   - avoiding obsolete server-side PDF plugins,
