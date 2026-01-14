@@ -11,6 +11,14 @@ Client-side HTML/JS to PDF exporter with Classic ASP integration. Generates A4 m
 
 <div align="center">
 
+## [👉 Click here to test the page! 👈](https://r0mb0.github.io/Html_to_pdf_client_side_classic_asp_demo/)
+
+[![example](https://github.com/R0mb0/Html_to_pdf_client_side_classic_asp_demo/blob/main/ReadMe_Imgs/Example.png?raw=true)](https://r0mb0.github.io/Html_to_pdf_client_side_classic_asp_demo/)
+
+</div>
+
+<div align="center">
+
 ## 👉 What this repo provides
 
 - A **client-side JavaScript library** (`pdf-export.js`) to export HTML to A4 PDF
