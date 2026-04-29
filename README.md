@@ -10,6 +10,17 @@
 Client-side HTML/JS to PDF exporter with Classic ASP integration. Generates A4 multi-page PDFs in the browser (using html2canvas + jsPDF), lets users download them locally or send them to a Classic ASP endpoint for server-side storage, with no extra PDF tools installed on the server.
 
 <div align="center">
+  <a href="http://paypal.me/R0mb0">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/R0mb0/Support_the_dev_badge/blob/main/Badge/SVG/Support_the_dev_badge_Dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://github.com/R0mb0/Support_the_dev_badge/blob/main/Badge/SVG/Support_the_dev_badge_Light.svg">
+      <img alt="Saved you time? Support the dev" src="https://github.com/R0mb0/Support_the_dev_badge/blob/main/Badge/SVG/Support_the_dev_badge_Default.svg">
+    </picture>
+  </a>
+</div>
+
+
+<div align="center">
 
 ## [👉 Click here to test the page! 👈](https://r0mb0.github.io/Html_to_pdf_client_side_classic_asp_demo/)
 
